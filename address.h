@@ -15,13 +15,13 @@ class Address{
 
 
         //Getters and Setters
-        void setCountry();
+        void setCountry(string);
         string getCountry();
         
-        void setCity();
+        void setCity(string);
         string getCity();
 
-        void setStreet();
+        void setStreet(string);
         string getStreet();
 };
 
