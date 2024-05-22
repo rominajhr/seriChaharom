@@ -9,8 +9,8 @@ class Address{
     string country , city , street;
     public:
         Address(string , string ,string);
-        ostream & operator <<(ostream& strm);
-        istream & operator>>(istream& strm);
+        friend ostream & operator <<(ostream& strm , const Address &a);
+        friend istream & operator >>(istream& strm , Address &a);
 
 
 
