@@ -9,6 +9,9 @@ Address :: Address(string co , string ci , string st){
     street = st;
 }
 
+
+
+//operators
 ostream & operator <<(ostream& strm , const Address &a){
     strm << "Country : " << a.country << endl;
     strm << "City : " << a.city << endl;
