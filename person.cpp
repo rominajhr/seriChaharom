@@ -6,6 +6,10 @@ using namespace std;
 //constructors
 Person :: Person(string na , string ID , Address adr):address(adr){
     name = na;
+    if(!validate(ID)){
+        cout<<"invalid id"<<endl;
+        exit(0);
+    }
     id = ID;
 }
 
