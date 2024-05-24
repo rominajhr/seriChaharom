@@ -45,7 +45,7 @@ class Employee{
     public :
         string name , id;
         Address address;
-        Employee(string , string , Address , int = 0 , int = 0 , int = 0 , int = 0);
+        Employee(string = "" , string = "" , Address , int = 0 , int = 0 , int = 0 , int = 0);
         Employee(const Employee &);
 
 

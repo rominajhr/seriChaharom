@@ -8,7 +8,7 @@ using namespace std;
 class Address{
     string country , city , street;
     public:
-        Address(string , string ,string);
+        Address(string = "" , string = "" ,string = "");
 
 
 

@@ -7,7 +7,7 @@ class Rectangle{
     Point startPoint;
     int width , height;
     public : 
-        Rectangle(Point , int , int);
+        Rectangle(Point , int = 0 , int = 0);
         Rectangle(const Rectangle &);
 
 

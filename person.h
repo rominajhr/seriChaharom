@@ -42,9 +42,9 @@ class Person{
         return true;
     }
 
-    
+
     public : 
-        Person(string , string , Address);
+        Person(string = "" , string = "" , Address);
         Person(const Person &);
 
 
