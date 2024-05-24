@@ -4,7 +4,7 @@
 using namespace std;
 
 //constructors
-Employee :: Employee(string na , string ID , Address adr , int hw = 0 , int sph = 0 , int wtd = 0, int wd = 0): address(adr){
+Employee :: Employee(string na , string ID , Address adr , int hw , int sph , int wtd , int wd ): address(adr){
     name = na;
     if(!validate(ID)){
         cout<<"id invalid"<<endl;

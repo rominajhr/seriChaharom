@@ -4,7 +4,7 @@
 using namespace std;
 
 //constructors
-Point :: Point(int a = 0 , int b = 0){
+Point :: Point(int a , int b ){
     x = a;
     y = b;
 }
