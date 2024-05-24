@@ -33,6 +33,11 @@ istream& operator >>(istream &strm , Person &p){
     strm >> p.name;
     cout<<"Id : ";
     strm >> p.id;
+    while(!p.validate(p.id)){
+        cout<<"invalid id"<<endl;
+        cout<<"Id : ";
+        strm >> p.id;
+    }
     strm >> p.address;
     return strm;
 }

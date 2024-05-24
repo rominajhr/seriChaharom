@@ -39,6 +39,11 @@ istream & operator >>(istream &strm , Employee & e){
     strm>>e.name;
     cout<<"Id : ";
     strm>>e.id;
+    while(!e.validate(e.id)){
+        cout<<"invalid id"<<endl;
+        cout<<"Id : ";
+        strm >> e.id;
+    }
     cout<<"Hour work : ";
     strm>>e.hourWork;
     cout<<"Salary per hour : ";
