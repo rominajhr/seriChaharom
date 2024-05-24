@@ -37,16 +37,17 @@ ostream & operator <<(ostream& strm , const Employee & e){
 istream & operator >>(istream &strm , Employee & e){
     cout<<"Name : ";
     strm>>e.name;
-    cout<<"\nId : ";
+    cout<<"Id : ";
     strm>>e.id;
-    cout<<"\nHour work : ";
+    cout<<"Hour work : ";
     strm>>e.hourWork;
-    cout<<"\nSalary per hour : ";
+    cout<<"Salary per hour : ";
     strm >> e.salaryPerHour;
-    cout<< "\nWork to do : ";
+    cout<< "Work to do : ";
     strm >> e.workToDo;
-    cout<<"\nWork Done : ";
+    cout<<"Work Done : ";
     strm >> e.workDone;
+    strm>>e.address;
 
     return strm;
 }

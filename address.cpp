@@ -22,9 +22,9 @@ ostream & operator <<(ostream& strm , const Address &a){
 istream & operator >> (istream & strm , Address &a){
     cout<< "Country : ";
     strm>>a.country;
-    cout<<"\nCity : ";
+    cout<<"City : ";
     strm>>a.city;
-    cout<<"\nStreet : ";
+    cout<<"Street : ";
     strm>>a.street;
     return strm;
 }

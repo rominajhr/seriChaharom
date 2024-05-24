@@ -31,9 +31,8 @@ ostream& operator <<(ostream &strm , const Person &p){
 istream& operator >>(istream &strm , Person &p){
     cout<< "Name : ";
     strm >> p.name;
-    cout<<"\nId : ";
+    cout<<"Id : ";
     strm >> p.id;
-    cout<<endl;
     strm >> p.address;
     return strm;
 }
