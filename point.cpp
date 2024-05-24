@@ -63,14 +63,14 @@ bool operator >= (const Point & p1 , const Point & p2){
 void Point :: setx(int a){
     x = a;
 }
-int Point :: getx(){
+int Point :: getx() const {
     return x;
 }
 
 void Point :: sety(int b){
     y = b;
 }
-int Point :: gety(){
+int Point :: gety() const {
     return y;
 }
 

@@ -19,10 +19,10 @@ class Point{
 
         //Getters and Setters
         void setx(int);
-        int getx();
+        int getx() const ;
 
         void sety(int);
-        int gety();
+        int gety() const ;
 };
 
 #endif
