@@ -44,7 +44,7 @@ class Person{
 
 
     public : 
-        Person(string = "" , string = "" , Address);
+        Person(string = "" , string = "" , Address = Address());
         Person(const Person &);
 
 
