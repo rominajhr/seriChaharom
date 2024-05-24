@@ -59,6 +59,8 @@ Employee & Employee :: operator = (const Employee & r){
     salaryPerHour = r.salaryPerHour;
     workDone = r.workDone;
     workToDo = r.workToDo;
+
+    return *this;
 }
 
 
