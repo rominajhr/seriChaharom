@@ -3,7 +3,7 @@
 using namespace std;
 
 //constructors
-Rectangle :: Rectangle(Point p , int w = 0 , int h = 0) : startPoint(p) {
+Rectangle :: Rectangle(Point p , int w , int h ) : startPoint(p) {
     width = w;
     height = h;
 }
@@ -17,7 +17,7 @@ Rectangle :: Rectangle(const Rectangle & r): startPoint(r.startPoint){
 
 //operators
 Rectangle & Rectangle :: operator += (const Rectangle &r){
-    if(startPoint.getx() != r.startPoint.getx() || startPoint.getx() != r.startPoint.gety())
+    if(startPoint.getx() != r.startPoint.getx() || startPoint.gety() != r.startPoint.gety())
         cout<<"Error : Start points are not equal"<<endl;
     else{
         width = max(width , r.width);
@@ -28,7 +28,7 @@ Rectangle & Rectangle :: operator += (const Rectangle &r){
 }
 
 Rectangle & Rectangle :: operator -= (const Rectangle &r){
-    if(startPoint.getx() != r.startPoint.getx() || startPoint.getx() != r.startPoint.gety())
+    if(startPoint.getx() != r.startPoint.getx() || startPoint.gety() != r.startPoint.gety())
         cout<<"Error : Start points are not equal"<<endl;
     else{
         width = min(width , r.width);
