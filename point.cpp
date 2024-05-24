@@ -19,7 +19,7 @@ Point :: Point(const Point & r){
 //operators
 Point operator + (const Point &p1 , const Point &p2){
     int newx = p1.x + p2.x;
-    int newy = p1.y + p1.y;
+    int newy = p1.y + p2.y;
 
     return Point(newx , newy);
 }
