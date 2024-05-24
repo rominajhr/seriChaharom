@@ -30,7 +30,7 @@ Employee :: Employee(const Employee & r):address(r.address){
 
 //operators
 ostream & operator <<(ostream& strm , const Employee & e){
-    strm << "Name : " << e.name << "\nId : " << e.id << "\nSalary : " << e.calculateSalary() << "\nEfficiency : " << e.efficiency() << endl << e.address;
+    strm << "Name : " << e.name << "\nId : " << e.id << "\nSalary : " << e.calculateSalary()<< "$" << "\nEfficiency : " << e.efficiency() <<" %" << endl << e.address;
     return strm;
 }
 
@@ -112,6 +112,6 @@ double Employee :: calculateSalary() const{
 }
 
 double Employee :: efficiency() const {
-    return (workDone * 1.0) / (hourWork * 1.0);    
+    return (workDone * 1.0) / (hourWork * 1.0) * 100;    
 }
 
