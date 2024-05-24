@@ -62,7 +62,7 @@ string Person :: getId(){
     return id;
 }
 
-void Person :: setAddress(Address adr){
+void Person :: setAddress(const Address & adr){
     address = adr;
 }
 Address Person :: getAddress(){

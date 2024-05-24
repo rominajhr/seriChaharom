@@ -8,6 +8,8 @@ using namespace std;
 class Person{
     string name , id;
     Address address;
+
+
     bool validate(string checkId){
         
         //checking the length of id
@@ -39,6 +41,8 @@ class Person{
 
         return true;
     }
+
+    
     public : 
         Person(string , string , Address);
         Person(const Person &);
@@ -59,7 +63,7 @@ class Person{
         void setId(string);
         string getId();
 
-        void setAddress(Address);
+        void setAddress(const Address &);
         Address getAddress();
 };
 
